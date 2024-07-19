@@ -1,0 +1,8 @@
+path
+/stac_extensions/stac_extensions
+/fields/template:new_field
+/fields/template:xyz
+/fields/template:xyz/x
+/fields/template:xyz/y
+/fields/template:xyz/z
+/fields/template:another_one

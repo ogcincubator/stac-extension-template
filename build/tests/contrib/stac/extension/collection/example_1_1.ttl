@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <template:> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] rdfs:label "A title" ;
+    dcterms:type "Collection" ;
+    ns1:another_one 1,
+        2,
+        3 ;
+    ns1:new_field "test" ;
+    ns1:xyz [ ] .
+
