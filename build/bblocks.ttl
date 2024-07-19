@@ -7,60 +7,60 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/stac-extension-template/ogc.contrib.stac.extension.collection> a skos:Concept,
+<https://ogcincubator.github.io/ogc.contrib.stac.extension.collection> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "STAC Collection" ;
     dct:abstract "Replace with description of your extension" ;
     dct:created "2023-12-08T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/collection/index.md" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/json-full/contrib/stac/extension/collection/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/bblock/ogc.contrib.stac.extension.collection" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/collection/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/stac-extension-template/bblock/ogc.contrib.stac.extension.collection" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/markdown/contrib/stac/extension/collection/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-12-09"^^xsd:date ;
     dct:source <https://stacspec.org/en/about/stac-spec/> ;
-    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/> ;
+    skos:inScheme <https://ogcincubator.github.io/stac-extension-template/> ;
     dcat:keyword "collection",
         "extension",
         "stac" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/ogc.contrib.stac.collection> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/schema.yaml> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.contrib.stac.collection> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/schema.json>,
+        <https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/contrib> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://raw.githubusercontent.com/ogcincubator/stac-extension-template/ogc.contrib.stac.extension.item> a skos:Concept,
+<https://ogcincubator.github.io/ogc.contrib.stac.extension.item> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "STAC Item - Extension Template" ;
     dct:abstract "Replace with description of your extension" ;
     dct:created "2023-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/item/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/bblock/ogc.contrib.stac.extension.item" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/markdown/contrib/stac/extension/item/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/item/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/json-full/contrib/stac/extension/item/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/stac-extension-template/bblock/ogc.contrib.stac.extension.item" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-12-09"^^xsd:date ;
     dct:source <https://stacspec.org/en/about/stac-spec/> ;
-    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/> ;
+    skos:inScheme <https://ogcincubator.github.io/stac-extension-template/> ;
     dcat:keyword "extension",
         "item",
         "stac" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/ogc.contrib.stac.item> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema.yaml> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/_sources/item/context.jsonld> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.contrib.stac.item> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema.json>,
+        <https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/stac-extension-template/_sources/item/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/contrib> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/> a skos:ConceptScheme,
+<https://ogcincubator.github.io/stac-extension-template/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - STAC Extensions Template" ;
     dct:abstract "This is the STAC extension template. It supports testing, integration with other schemas and cross-version schema transpilation through the OGC Building Blocks automation." ;
@@ -73,19 +73,19 @@ Implementers can fork this repository and add additional examples in the `tests/
 Provides a framework for documentation and testing of additional extensions.
 """ ;
     skos:prefLabel "Building Blocks - STAC Extensions Template" ;
-    bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://ogcincubator.github.io/stac-extension-template/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/bblocks-stac/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 <https://stacspec.org/en/about/stac-spec/> rdfs:label "STAC Specification" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-19T06:17:44.477632"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-19T06:17:44.419640"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-19T06:19:51.745362"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-19T06:19:51.685520"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:e88311d9f9f47ab1b6a432248fdaf606f9e59906" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/register.json> ],
+            dct:hasVersion "git:3e14f2b5f6751c504d9e3fabc4bb0a9dda4b142a" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/stac-extension-template/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;

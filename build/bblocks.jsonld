@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main"
+      "@base": "https://ogcincubator.github.io/stac-extension-template"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,7 +106,7 @@
   "name": "Building Blocks - STAC Extensions Template",
   "abstract": "This is the STAC extension template. It supports testing, integration with other schemas and cross-version schema transpilation through the OGC Building Blocks automation.",
   "description": "Allows for development and testing of STAC extensions.\n\nSupports definition and testing of transformations to/from STAC from other formats.\n\nImplementers can fork this repository and add additional examples in the `tests/` directory of each Building Block and run validation processes locally.\n\nProvides a framework for documentation and testing of additional extensions.\n",
-  "modified": "2024-07-19T06:17:34.851372",
+  "modified": "2024-07-19T06:19:41.790939",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
@@ -116,9 +116,9 @@
   },
   "gitRepository": "https://github.com/ogcincubator/stac-extension-template",
   "gitHubRepository": "https://github.com/ogcincubator/stac-extension-template/blob/main/",
-  "baseURL": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/",
-  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/",
-  "validationReport": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/tests/report.html",
+  "baseURL": "https://ogcincubator.github.io/stac-extension-template/",
+  "viewerURL": "https://ogcincubator.github.io/stac-extension-template/",
+  "validationReport": "https://ogcincubator.github.io/stac-extension-template/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://ogcincubator.github.io/bblocks-stac/build/register.json"
@@ -158,26 +158,26 @@
         "ogc.contrib.stac.collection"
       ],
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/_sources/collection/schema.json",
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/_sources/collection/",
+      "sourceSchema": "https://ogcincubator.github.io/stac-extension-template/_sources/collection/schema.json",
+      "ldContext": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/stac-extension-template/_sources/collection/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/stac-extension-template/blob/main/build/tests/contrib/stac/extension/collection/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/collection/index.json"
+          "url": "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/json-full/contrib/stac/extension/collection/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/collection/index.md"
+          "url": "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/markdown/contrib/stac/extension/collection/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/bblock/ogc.contrib.stac.extension.collection"
+          "url": "https://ogcincubator.github.io/stac-extension-template/bblock/ogc.contrib.stac.extension.collection"
         }
       },
       "@type": [
@@ -214,28 +214,28 @@
       "dependsOn": [
         "ogc.contrib.stac.item"
       ],
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/context.jsonld",
+      "ldContext": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/context.jsonld",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/_sources/item/schema.json",
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/_sources/item/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/_sources/item/",
+      "sourceSchema": "https://ogcincubator.github.io/stac-extension-template/_sources/item/schema.json",
+      "sourceLdContext": "https://ogcincubator.github.io/stac-extension-template/_sources/item/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/stac-extension-template/_sources/item/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/stac-extension-template/blob/main/build/tests/contrib/stac/extension/item/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/item/index.json"
+          "url": "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/json-full/contrib/stac/extension/item/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/item/index.md"
+          "url": "https://ogcincubator.github.io/stac-extension-template/build/generateddocs/markdown/contrib/stac/extension/item/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/bblock/ogc.contrib.stac.extension.item"
+          "url": "https://ogcincubator.github.io/stac-extension-template/bblock/ogc.contrib.stac.extension.item"
         }
       },
       "@type": [

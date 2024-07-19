@@ -2,9 +2,9 @@ x-defs:
   ogc.contrib.stac.item:
     description: STAC Collection
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.recordGeoJSON
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.recordGeoJSON
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item
     x-jsonld-extra-terms:
       assets:
         x-jsonld-id: https://w3id.org/ogc/stac/core/assets
@@ -15,15 +15,15 @@ x-defs:
     x-schema-version: https://json-schema.org/draft/2020-12/schema
   ogc.geo.features.feature:
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
     - type: object
       properties:
         bbox:
-          $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
+          $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
         links:
           type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+            $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
         type:
           enum:
@@ -41,7 +41,7 @@ x-defs:
     description: Normative records schema - adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/recordGeoJSON.yaml
     type: object
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
     required:
     - id
     - type
@@ -64,12 +64,12 @@ x-defs:
         oneOf:
         - enum:
           - null
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.time
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.time
       geometry:
         oneOf:
         - enum:
           - null
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson/properties/geometry
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson/properties/geometry
       properties:
         type: object
         properties:
@@ -103,18 +103,18 @@ x-defs:
           language:
             description: The language used for textual values in this record representation.
             allOf:
-            - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.language
+            - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.language
           languages:
             type: array
             description: This list of languages in which this record is available.
             items:
-              $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.language
+              $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.language
           resourceLanguages:
             type: array
             description: The list of languages in which the resource described by
               this record is available.
             items:
-              $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.language
+              $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.language
           externalIds:
             type: array
             description: An identifier for the resource assigned by an external (to
@@ -137,7 +137,7 @@ x-defs:
             description: A knowledge organization system used to classify the resource.
             minItems: 1
             items:
-              $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.theme
+              $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.theme
           formats:
             type: array
             description: A list of available distributions of the resource.
@@ -148,9 +148,9 @@ x-defs:
             description: A list of contacts qualified by their role(s) in association
               to the record or the resource described by the record.
             items:
-              $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.contact
+              $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.contact
           license:
-            $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.license
+            $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.license
           rights:
             type: string
             description: A statement that concerns all rights not addressed by the
@@ -158,11 +158,11 @@ x-defs:
       links:
         type: array
         items:
-          $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.linkBase
+          $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.linkBase
       linkTemplates:
         type: array
         items:
-          $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.linkTemplate
+          $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.linkTemplate
     x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
   item:
@@ -171,18 +171,18 @@ x-defs:
     description: This object represents the metadata for an item in a SpatioTemporal
       Asset Catalog.
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/core
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/core
     definitions:
       common_metadata:
         allOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/basics
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/datetime
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/instrument
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/licensing
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/provider
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/basics
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/datetime
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/instrument
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/licensing
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/provider
       core:
         allOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson_1
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson_1
         - oneOf:
           - type: object
             required:
@@ -190,7 +190,7 @@ x-defs:
             - bbox
             properties:
               geometry:
-                $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/Geometry
+                $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/Geometry
               bbox:
                 type: array
                 oneOf:
@@ -239,12 +239,12 @@ x-defs:
               description: Links to item relations
               type: array
               items:
-                $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/link
+                $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/link
             assets:
-              $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/assets
+              $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/assets
             properties:
               allOf:
-              - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/common_metadata
+              - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/common_metadata
               - anyOf:
                 - required:
                   - datetime
@@ -305,7 +305,7 @@ x-defs:
         description: Links to assets
         type: object
         additionalProperties:
-          $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/asset
+          $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/asset
       asset:
         allOf:
         - type: object
@@ -331,7 +331,7 @@ x-defs:
               type: array
               items:
                 type: string
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/common_metadata
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/item/definitions/common_metadata
     x-schema-source: https://github.com/radiantearth/stac-spec/raw/master/item-spec/json-schema/item.json
     x-schema-id: https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json#
     x-schema-version: http://json-schema.org/draft-07/schema#
@@ -932,7 +932,7 @@ x-defs:
         description: Graphic identifying a contact. The link relation should be `icon`
           and the media type should be an image media type.
         allOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
         - type: object
           required:
           - rel
@@ -957,7 +957,7 @@ x-defs:
             roles:
               description: The type of phone number (e.g. home, work, fax, etc.).
               allOf:
-              - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
+              - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
       emails:
         type: array
         description: Email addresses at which contact can be made.
@@ -973,7 +973,7 @@ x-defs:
             roles:
               description: The type of email (e.g. home, work, etc.).
               allOf:
-              - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
+              - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
       addresses:
         type: array
         description: Physical location at which contact can be made.
@@ -1000,13 +1000,13 @@ x-defs:
             roles:
               description: The type of address (e.g. office, home, etc.).
               allOf:
-              - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
+              - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
       links:
         type: array
         description: On-line information about the contact.
         items:
           allOf:
-          - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+          - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           - type: object
             required:
             - type
@@ -1023,7 +1023,7 @@ x-defs:
         description: The set of named duties, job functions and/or permissions associated
           with this contact. (e.g. developer, administrator, etc.).
         allOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.roles
     x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml
   ogc.api.records.v1.schemas.license:
     type: string
@@ -1093,7 +1093,7 @@ x-defs:
     x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml
   ogc.api.records.v1.schemas.linkTemplate:
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.linkBase
+    - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.api.records.v1.schemas.linkBase
     - type: object
       required:
       - uriTemplate
@@ -1746,19 +1746,19 @@ description: STAC Template Extension for STAC Items and STAC Collections, using 
   base STAC schemas via building block references
 oneOf:
 - allOf:
-  - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.contrib.stac.item
-  - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/definitions/stac_extensions
+  - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/x-defs/ogc.contrib.stac.item
+  - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/definitions/stac_extensions
   - type: object
     properties:
       properties:
         allOf:
         - required:
           - template:new_field
-        - $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/definitions/fields
+        - $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/definitions/fields
       assets:
         type: object
         additionalProperties:
-          $ref: https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/definitions/fields
+          $ref: https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema-oas3.0.yaml#/definitions/fields
         x-jsonld-id: https://w3id.org/ogc/stac/core/assets
         x-jsonld-container: '@id'
 definitions:

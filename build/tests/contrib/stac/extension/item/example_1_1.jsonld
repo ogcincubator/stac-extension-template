@@ -64,5 +64,5 @@
       "template:new_field": "test"
     }
   },
-  "@context": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/context.jsonld"
+  "@context": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/context.jsonld"
 }

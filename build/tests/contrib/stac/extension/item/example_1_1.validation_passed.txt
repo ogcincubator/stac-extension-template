@@ -1,5 +1,5 @@
 Validation report for ogc.contrib.stac.extension.item - STAC Item - Extension Template
-Generated 2024-07-19T06:17:44.406790+00:00
+Generated 2024-07-19T06:19:51.672635+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

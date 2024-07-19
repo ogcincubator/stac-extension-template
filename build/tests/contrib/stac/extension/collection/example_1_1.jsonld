@@ -70,5 +70,5 @@
       "rel": "item"
     }
   ],
-  "@context": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/collection/context.jsonld"
+  "@context": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/collection/context.jsonld"
 }

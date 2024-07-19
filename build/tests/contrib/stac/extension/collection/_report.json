@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.contrib.stac.extension.collection - STAC Collection",
   "bblockName": "STAC Collection",
   "bblockId": "ogc.contrib.stac.extension.collection",
-  "generated": "2024-07-19T06:17:43.016903+00:00",
+  "generated": "2024-07-19T06:19:50.817258+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/contrib/stac/extension/collection/example_1_1.json",
-        "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/tests/contrib/stac/extension/collection/example_1_1.json",
+        "url": "https://ogcincubator.github.io/stac-extension-template/build/tests/contrib/stac/extension/collection/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"

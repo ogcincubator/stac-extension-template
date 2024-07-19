@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.contrib.stac.extension.item - STAC Item - Extension Template",
   "bblockName": "STAC Item - Extension Template",
   "bblockId": "ogc.contrib.stac.extension.item",
-  "generated": "2024-07-19T06:17:44.406869+00:00",
+  "generated": "2024-07-19T06:19:51.672712+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/contrib/stac/extension/item/example_1_1.json",
-        "url": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/tests/contrib/stac/extension/item/example_1_1.json",
+        "url": "https://ogcincubator.github.io/stac-extension-template/build/tests/contrib/stac/extension/item/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"

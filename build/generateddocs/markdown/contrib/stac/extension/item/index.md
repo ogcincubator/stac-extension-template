@@ -152,7 +152,7 @@ This is the default stac-extension template example. Replace with an example of 
       "template:new_field": "test"
     }
   },
-  "@context": "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/context.jsonld"
+  "@context": "https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/context.jsonld"
 }
 ```
 
@@ -270,8 +270,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/schema.yaml)
 
 
 # JSON-LD Context
@@ -349,7 +349,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/annotated/contrib/stac/extension/item/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/stac-extension-template/build/annotated/contrib/stac/extension/item/context.jsonld)
 
 ## Sources
 
