@@ -1,0 +1,18 @@
+identifier-prefix: ogc.contrib.stac.extension.
+
+name: STAC Extensions Template
+abstract: This is the STAC extension template. It supports testing, integration with other schemas and cross-version schema transpilation through the OGC Building Blocks automation.
+
+description: |
+  Allows for development and testing of STAC extensions.
+  
+  Supports definition and testing of transformations to/from STAC from other formats.
+  
+  Implementers can fork this repository and add additional examples in the `tests/` directory of each Building Block and run validation processes locally.
+  
+  Provides a framework for documentation and testing of additional extensions.
+
+imports:
+  - default
+  - https://ogcincubator.github.io/bblocks-stac/build/register.json
+

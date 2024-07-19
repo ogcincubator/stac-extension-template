@@ -1,0 +1,8 @@
+- title: STAC extension template collection
+  content: |
+    This is the default stac-extension template example. Replace with an example of your extension.
+
+  snippets:
+    - language: json
+      ref: ../../examples/collection.json
+      base-uri: 'https://example.com/stac/example1/'
