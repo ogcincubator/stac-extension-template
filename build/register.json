@@ -2,7 +2,7 @@
   "name": "STAC Extensions Template",
   "abstract": "This is the STAC extension template. It supports testing, integration with other schemas and cross-version schema transpilation through the OGC Building Blocks automation.",
   "description": "Allows for development and testing of STAC extensions.\n\nSupports definition and testing of transformations to/from STAC from other formats.\n\nImplementers can fork this repository and add additional examples in the `tests/` directory of each Building Block and run validation processes locally.\n\nProvides a framework for documentation and testing of additional extensions.\n",
-  "modified": "2024-07-19T06:10:43.322487",
+  "modified": "2024-07-19T06:17:34.851372",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
@@ -31,7 +31,7 @@
       "itemClass": "schema",
       "register": "ogc-contrib-stac",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-19",
+      "dateOfLastChange": "2023-12-09",
       "sources": [
         {
           "title": "STAC Specification",
@@ -83,7 +83,7 @@
       "itemClass": "schema",
       "register": "ogc-contrib-stac",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-19",
+      "dateOfLastChange": "2023-12-09",
       "sources": [
         {
           "title": "STAC Specification",

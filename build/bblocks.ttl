@@ -13,14 +13,14 @@
     rdfs:label "STAC Collection" ;
     dct:abstract "Replace with description of your extension" ;
     dct:created "2023-12-08T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/collection/index.json" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/collection/index.md" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/bblock/ogc.contrib.stac.extension.collection" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/collection/index.md" ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/collection/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-19"^^xsd:date ;
+    dct:modified "2023-12-09"^^xsd:date ;
     dct:source <https://stacspec.org/en/about/stac-spec/> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/> ;
     dcat:keyword "collection",
@@ -39,14 +39,14 @@
     rdfs:label "STAC Item - Extension Template" ;
     dct:abstract "Replace with description of your extension" ;
     dct:created "2023-12-08T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/item/index.json" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/item/index.md" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/bblock/ogc.contrib.stac.extension.item" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/markdown/contrib/stac/extension/item/index.md" ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/generateddocs/json-full/contrib/stac/extension/item/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-19"^^xsd:date ;
+    dct:modified "2023-12-09"^^xsd:date ;
     dct:source <https://stacspec.org/en/about/stac-spec/> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/> ;
     dcat:keyword "extension",
@@ -80,11 +80,11 @@ Provides a framework for documentation and testing of additional extensions.
 <https://stacspec.org/en/about/stac-spec/> rdfs:label "STAC Specification" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-19T06:10:57.135784"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-19T06:10:57.065966"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-19T06:17:44.477632"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-19T06:17:44.419640"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:8f3318d671f656217646f8ac1e11d5613dcdaee2" ;
+            dct:hasVersion "git:e88311d9f9f47ab1b6a432248fdaf606f9e59906" ;
             rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/stac-extension-template/main/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
